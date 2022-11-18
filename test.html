@@ -1,8 +1,60 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>クレジットカードテスト</title>
+    <style type="text/css">
+      label {
+        width: 220px;
+        display: inline-block;
+      }
+    </style>
   </head>
   <body>
-    YES!
+    <form>
+      <p>
+        <label>クレジットカード番号:</label>
+        <input type="text" id="cc-number" name="cn" autocomplete="cc-number" />
+      </p>
+
+      <p>
+        <label>クレジットカード有効期限:</label>
+        <select name="cem" autocomplete="cc-exp-month">
+          <option value=""></option>
+          <option value="01">1</option>
+          <option value="02">2</option>
+          <option value="03">3</option>
+          <option value="04">4</option>
+          <option value="05">5</option>
+          <option value="06">6</option>
+          <option value="07">7</option>
+          <option value="08">8</option>
+          <option value="09">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select>
+        <span>月/</span>
+
+        <select name="cey" autocomplete="cc-exp-year">
+          <option value=""></option>
+          <option value="2022">2022</option>
+          <option value="2023">2023</option>
+          <option value="2024">2024</option>
+          <option value="2025">2025</option>
+          <option value="2026">2026</option>
+        </select>
+        <span>年</span>
+      </p>
+
+      <p>
+        <label>クレジットカード名義；</label>
+        <input type="text" id="cname" name="cname" autocomplete="cc-name" />
+      </p>
+
+      <p>
+        <label>セキュリティコード：</label>
+        <input type="text" id="csc" name="csc" autocomplete="cc-csc" />
+      </p>
+    </form>
   </body>
 </html>
